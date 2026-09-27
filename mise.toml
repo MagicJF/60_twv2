@@ -1,0 +1,16 @@
+[tools]
+node = "24"
+python = "3.13"
+uv = "latest"
+jj = "0.45.1"
+
+"pypi:specify-cli" = "latest"
+"npm:@openai/codex" = "latest"
+"npm:tiddlywiki" = "latest"
+
+[env]
+_.path = ["{{config_root}}/node_modules/.bin"]
+
+[tasks.dev]
+description = "Iniciar TiddlyWiki"
+run = "tiddlywiki wiki --listen"
